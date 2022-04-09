@@ -1,0 +1,28 @@
+{
+  "name": "oregonnebula.github.io",
+  "version": "1.0.0",
+  "description": "https://oregonnebula.com",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oregonnebula/oregonnebula.github.io.git"
+  },
+  "author": "Simon Bilsky-Rollins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oregonnebula/oregonnebula.github.io/issues"
+  },
+  "homepage": "https://github.com/oregonnebula/oregonnebula.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@contentful/rich-text-html-renderer": "^15.12.0",
+    "contentful": "^9.1.19",
+    "dotenv": "^16.0.0"
+  }
+}
