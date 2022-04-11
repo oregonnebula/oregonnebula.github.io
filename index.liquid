@@ -1,0 +1,9 @@
+---
+permalink: "/"
+layout: page.liquid
+renderData:
+    title: {{homepage.title}}
+---
+
+<h2>{{homepage.title}}</h2>
+{% documentToHtmlString homepage.body %}
