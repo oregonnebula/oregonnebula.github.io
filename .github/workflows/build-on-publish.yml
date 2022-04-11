@@ -41,3 +41,5 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: _site
+          cname: www.oregonnebula.com
+          full_commit_message: contentful publish
