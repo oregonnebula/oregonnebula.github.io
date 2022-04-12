@@ -6,7 +6,9 @@ const client = contentful.createClient({
 })
 
 module.exports = async () => {
-  return client.getEntry('6ZFQYhusb6mHbrhB0H4Q76')
-    .then(response => response.fields)
+  return client.getEntries({ content_type: 'page' })
+    .then(response => {
+      return response.items.map(page => page.fields)
+    })
     .catch(console.error)
 }

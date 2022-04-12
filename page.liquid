@@ -1,0 +1,21 @@
+---
+pagination:
+    data: pages
+    size: 1
+    alias: page
+permalink: "{{ page.permalink | slug }}/index.html"
+---
+
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>{{page.title}}</title>
+</head>
+
+<body>
+    <main>
+        <h2>{{page.title}}</h2>
+        {% documentToHtmlString page.body %}
+    </main>
+</body>
